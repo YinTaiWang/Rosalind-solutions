@@ -26,7 +26,7 @@ if __name__ == '__main__':
     with open('rosalind_prot.txt', 'r') as f:
         rna = f.readline().strip()
     protein = ""
-    for i in range(0, len(rna), 3):
+    for i in range(0, len(rna), 3): # read 3 nucleotides every time
         codon = rna[i:i+3]
         protein += RNA_codon[codon]
     print(protein)
