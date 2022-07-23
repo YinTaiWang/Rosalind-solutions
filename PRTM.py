@@ -22,5 +22,5 @@ if __name__ == '__main__':
     with open('rosalind_prtm.txt', 'r') as f:
         p_string = f.readline().strip()
     t_weight = weight(p_string)
-    print("%.3f" % t_weight)
+    print(round(t_weight, 3))
     
