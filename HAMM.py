@@ -1,7 +1,7 @@
 #Counting Point Mutations
 #https://rosalind.info/problems/hamm/
 
-def HammingDistance(s, t):
+def hammingdistance(s, t):
     hammingdistance = 0
     for i in range(len(s)):
         if s[i] != t[i]:
@@ -11,5 +11,5 @@ def HammingDistance(s, t):
 if __name__ == '__main__':
     with open('rosalind_hamm.txt', 'r') as f:
         s, t = f.readlines()
-    print(HammingDistance(s, t))
+    print(hammingdistance(s, t))
 
